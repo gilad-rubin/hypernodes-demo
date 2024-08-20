@@ -1,0 +1,1 @@
+{"name": "sklearn_ranker", "dag_module_paths": ["sklearn_ranker_dag.py"], "hp_config_path": "sklearn_ranker_hp_config.py"}

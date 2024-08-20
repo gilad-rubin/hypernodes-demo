@@ -1,0 +1,1 @@
+{"name": "batch_qa", "dag_module_paths": ["batch_qa_dag.py"], "hp_config_path": "batch_qa_hp_config.py"}

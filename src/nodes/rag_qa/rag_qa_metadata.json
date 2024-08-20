@@ -1,0 +1,1 @@
+{"name": "rag_qa", "dag_module_paths": ["rag_qa_dag.py"], "hp_config_path": "rag_qa_hp_config.py"}
