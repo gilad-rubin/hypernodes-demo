@@ -12,7 +12,7 @@ def llm_responses(questions: pd.Series, texts_path: str, rag_qa_node: HyperNode)
     responses = []
     inputs = rag_qa_node._instantiated_inputs
     for question in questions:
-        inputs.update({"user_query" : question, "texts_path" : texts_path})
+        inputs.update({"query" : question, "texts_path" : texts_path})
         res = rag_qa_node.execute(final_vars=["llm_response"], inputs=inputs)
         responses.append(res["llm_response"])
     return responses

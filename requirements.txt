@@ -4,3 +4,5 @@ hypster
 scikit-learn
 openpyxl
 mlflow
+streamlit
+streamlit-flow-component

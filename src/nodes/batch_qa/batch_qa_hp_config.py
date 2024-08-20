@@ -9,7 +9,7 @@ def hp_config(hp: HP):
     from hamilton.driver import Builder
     adapters = []
     if hp.select([True, False], name='use_mlflow_adapter', default=True):
-        mlflow_tracking_uri = hp.text_input('file:./mlruns')
-        mlflow_adapter = MLFlowTracker(tracking_uri=mlflow_tracking_uri)
+        mlflow_experiment_name = hp.text_input('hypernodes')
+        mlflow_adapter = MLFlowTracker(experiment_name=mlflow_experiment_name)
         adapters.append(mlflow_adapter)
     builder = Builder().with_adapters(*adapters)
